@@ -5,6 +5,7 @@
     "subtitle": "Showroom de vídeo, voz e imagem + matriz de compliance",
     "version": "1.0.0",
     "updatedAt": "2026-11-15",
+    "pagesUrl": "https://renatosfcontador-ops.github.io/grupo-reis-dragonzord-teste-2/",
     "source": "Vídeo de referência de André Lug"
   },
   "categories": [
@@ -66,10 +67,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "diffusion", "krita"],
+      "tags": [
+        "imagem",
+        "diffusion",
+        "krita"
+      ],
       "license": "GPL-3.0",
       "compliance": "green",
-      "complianceNote": "Uso liberado conforme curadoria; verificar termos de empacotamento do plugin."
+      "complianceNote": "Uso liberado conforme curadoria; verificar termos de empacotamento do plugin.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "desktop",
+        "label": "Aplicativo desktop",
+        "localUrl": null,
+        "runCommand": "Instalar o plugin .pluginpkg no Krita",
+        "note": "Aplicativo desktop; não abre em navegador."
+      }
     },
     {
       "id": 23,
@@ -83,10 +96,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "diffusion", "pesos"],
+      "tags": [
+        "vídeo",
+        "diffusion",
+        "pesos"
+      ],
       "license": "Licença Lightricks (verificar uso comercial)",
       "compliance": "yellow",
-      "complianceNote": "Verificar licença dos pesos e condições de uso comercial antes de empacotar."
+      "complianceNote": "Verificar licença dos pesos e condições de uso comercial antes de empacotar.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install ltx-video",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 22,
@@ -100,10 +125,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "tencent", "pesos"],
+      "tags": [
+        "vídeo",
+        "tencent",
+        "pesos"
+      ],
       "license": "Licença Tencent (verificar uso comercial)",
       "compliance": "yellow",
-      "complianceNote": "Pesos e termos da Tencent exigem revisão jurídica antes de uso comercial."
+      "complianceNote": "Pesos e termos da Tencent exigem revisão jurídica antes de uso comercial.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install hunyuan-video",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 21,
@@ -117,10 +154,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "diffusion", "pesos"],
+      "tags": [
+        "vídeo",
+        "diffusion",
+        "pesos"
+      ],
       "license": "Licença de pesquisa (verificar uso comercial)",
       "compliance": "yellow",
-      "complianceNote": "Confirmar se os pesos permitem exploração comercial e em quais condições."
+      "complianceNote": "Confirmar se os pesos permitem exploração comercial e em quais condições.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install cogvideo",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 20,
@@ -134,10 +183,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "avatar", "áudio"],
+      "tags": [
+        "vídeo",
+        "avatar",
+        "áudio"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; comercialização livre com atribuição."
+      "complianceNote": "MIT; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "cli",
+        "label": "Linha de comando",
+        "localUrl": null,
+        "runCommand": "python inference.py --source assets/source.png --driven_audio assets/audio.wav",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 19,
@@ -151,10 +212,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "tts", "voz"],
+      "tags": [
+        "áudio",
+        "tts",
+        "voz"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; atenção ao consentimento de voz em clonagens."
+      "complianceNote": "MIT; atenção ao consentimento de voz em clonagens.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "f5-tts_infer-gradio --port 7860",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 18,
@@ -168,10 +241,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "alibaba", "pesos"],
+      "tags": [
+        "vídeo",
+        "alibaba",
+        "pesos"
+      ],
       "license": "Licença Wan (verificar uso comercial)",
       "compliance": "yellow",
-      "complianceNote": "Verificar termos dos pesos e condições de uso comercial."
+      "complianceNote": "Verificar termos dos pesos e condições de uso comercial.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python generate.py --task t2v --size 1280*720",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 17,
@@ -185,10 +270,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "retrato", "pesquisa"],
+      "tags": [
+        "vídeo",
+        "retrato",
+        "pesquisa"
+      ],
       "license": "Licença de pesquisa (uso comercial restrito)",
       "compliance": "yellow",
-      "complianceNote": "Uso comercial restrito; revisar termos de pesquisa e consentimento de imagem."
+      "complianceNote": "Uso comercial restrito; revisar termos de pesquisa e consentimento de imagem.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python gradio_app.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 16,
@@ -202,10 +299,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "música", "meta"],
+      "tags": [
+        "áudio",
+        "música",
+        "meta"
+      ],
       "license": "CC-BY-NC 4.0 (pesos) / MIT (código)",
       "compliance": "yellow",
-      "complianceNote": "Pesos não comerciais; código MIT condicional. Verificar uso comercial."
+      "complianceNote": "Pesos não comerciais; código MIT condicional. Verificar uso comercial.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python demos/audiogen_demo.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 15,
@@ -219,10 +328,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "background", "pipeline"],
+      "tags": [
+        "imagem",
+        "background",
+        "pipeline"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; comercialização livre com atribuição."
+      "complianceNote": "MIT; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "cli",
+        "label": "Linha de comando",
+        "localUrl": null,
+        "runCommand": "pip install rembg[cpu]",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 14,
@@ -236,10 +357,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "diffusion", "pesos"],
+      "tags": [
+        "imagem",
+        "diffusion",
+        "pesos"
+      ],
       "license": "Non-Commercial / verificar uso comercial",
       "compliance": "yellow",
-      "complianceNote": "Licença não comercial para alguns pesos; exigir verificação para fins lucrativos."
+      "complianceNote": "Licença não comercial para alguns pesos; exigir verificação para fins lucrativos.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install diffusers",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 13,
@@ -253,10 +386,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "transcrição", "whisper"],
+      "tags": [
+        "áudio",
+        "transcrição",
+        "whisper"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; comercialização livre com atribuição."
+      "complianceNote": "MIT; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install faster-whisper",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 12,
@@ -270,10 +415,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "vocal", "gui"],
+      "tags": [
+        "áudio",
+        "vocal",
+        "gui"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; comercialização livre com atribuição."
+      "complianceNote": "MIT; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "desktop",
+        "label": "Aplicativo desktop",
+        "localUrl": null,
+        "runCommand": "Abrir o executável UVR (GUI desktop)",
+        "note": "Aplicativo desktop; não abre em navegador."
+      }
     },
     {
       "id": 11,
@@ -287,10 +444,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "tts", "clonagem"],
+      "tags": [
+        "áudio",
+        "tts",
+        "clonagem"
+      ],
       "license": "MIT / verificar termos comerciais",
       "compliance": "yellow",
-      "complianceNote": "Verificar termos comerciais e consentimento explícito para clonagem de voz."
+      "complianceNote": "Verificar termos comerciais e consentimento explícito para clonagem de voz.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python gradio_tts_app.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 10,
@@ -304,10 +473,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "studio", "rail"],
+      "tags": [
+        "imagem",
+        "studio",
+        "rail"
+      ],
       "license": "CreativeML Open RAIL-M",
       "compliance": "yellow",
-      "complianceNote": "RAIL-M permite uso comercial com restrições de uso e atribuição."
+      "complianceNote": "RAIL-M permite uso comercial com restrições de uso e atribuição.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:9090",
+        "runCommand": "docker compose up",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 9,
@@ -321,10 +502,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "diffusion", "pesos"],
+      "tags": [
+        "vídeo",
+        "diffusion",
+        "pesos"
+      ],
       "license": "Apache 2.0 / verificar pesos",
       "compliance": "yellow",
-      "complianceNote": "Código aberto; pesos e datasets podem ter termos próprios."
+      "complianceNote": "Código aberto; pesos e datasets podem ter termos próprios.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python gradio_app.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 8,
@@ -338,10 +531,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "tts", "clonagem"],
+      "tags": [
+        "áudio",
+        "tts",
+        "clonagem"
+      ],
       "license": "Verificar termos comerciais",
       "compliance": "yellow",
-      "complianceNote": "Confirmar termos comerciais e consentimento de voz antes de usar em produto."
+      "complianceNote": "Confirmar termos comerciais e consentimento de voz antes de usar em produto.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python tools/webui.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 7,
@@ -355,10 +560,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["biblioteca", "diffusion", "pipeline"],
+      "tags": [
+        "biblioteca",
+        "diffusion",
+        "pipeline"
+      ],
       "license": "Apache 2.0",
       "compliance": "green",
-      "complianceNote": "Apache 2.0; comercialização livre com atribuição e manutenção de avisos."
+      "complianceNote": "Apache 2.0; comercialização livre com atribuição e manutenção de avisos.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "library",
+        "label": "Biblioteca / API",
+        "localUrl": null,
+        "runCommand": "pip install diffusers",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 6,
@@ -372,10 +589,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "upscale", "restauração"],
+      "tags": [
+        "imagem",
+        "upscale",
+        "restauração"
+      ],
       "license": "BSD 3-Clause",
       "compliance": "green",
-      "complianceNote": "BSD 3-Clause; comercialização livre com atribuição."
+      "complianceNote": "BSD 3-Clause; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "cli",
+        "label": "Linha de comando",
+        "localUrl": null,
+        "runCommand": "pip install realesrgan",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 5,
@@ -389,10 +618,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "voice-conversion", "clonagem"],
+      "tags": [
+        "áudio",
+        "voice-conversion",
+        "clonagem"
+      ],
       "license": "MIT / uso de voz de terceiros",
       "compliance": "yellow",
-      "complianceNote": "Gatilho vermelho: proibido usar voz de terceiros sem consentimento explícito."
+      "complianceNote": "Gatilho vermelho: proibido usar voz de terceiros sem consentimento explícito.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7865",
+        "runCommand": "python tools/web.py --port 7865",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 4,
@@ -406,10 +647,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "tts", "suno"],
+      "tags": [
+        "áudio",
+        "tts",
+        "suno"
+      ],
       "license": "MIT / restrições Suno",
       "compliance": "yellow",
-      "complianceNote": "Verificar restrições de uso comercial do áudio gerado e termos da Suno."
+      "complianceNote": "Verificar restrições de uso comercial do áudio gerado e termos da Suno.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python notebooks/bark_demo.ipynb",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 3,
@@ -423,10 +676,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["áudio", "tts", "mpl"],
+      "tags": [
+        "áudio",
+        "tts",
+        "mpl"
+      ],
       "license": "MPL 2.0",
       "compliance": "yellow",
-      "complianceNote": "MPL 2.0: modificações de arquivos licenciados devem permanecer abertas."
+      "complianceNote": "MPL 2.0: modificações de arquivos licenciados devem permanecer abertas.",
+      "frontend": {
+        "hasUI": false,
+        "kind": "cli",
+        "label": "Linha de comando",
+        "localUrl": null,
+        "runCommand": "pip install TTS",
+        "note": "Este repositório não possui front-end nativo."
+      }
     },
     {
       "id": 2,
@@ -440,10 +705,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["imagem", "segmentação", "meta"],
+      "tags": [
+        "imagem",
+        "segmentação",
+        "meta"
+      ],
       "license": "Apache 2.0 (código) / pesos de pesquisa",
       "compliance": "yellow",
-      "complianceNote": "Código Apache 2.0; pesos sob licença própria de pesquisa."
+      "complianceNote": "Código Apache 2.0; pesos sob licença própria de pesquisa.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:7860",
+        "runCommand": "python app.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     },
     {
       "id": 1,
@@ -457,10 +734,22 @@
       "embedUrl": null,
       "embeddable": false,
       "status": "pendente",
-      "tags": ["vídeo", "pipeline", "automação"],
+      "tags": [
+        "vídeo",
+        "pipeline",
+        "automação"
+      ],
       "license": "MIT",
       "compliance": "green",
-      "complianceNote": "MIT; comercialização livre com atribuição."
+      "complianceNote": "MIT; comercialização livre com atribuição.",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web",
+        "localUrl": "http://localhost:8501",
+        "runCommand": "streamlit run webui/Main.py",
+        "note": "Interface disponível após executar o projeto localmente."
+      }
     }
   ]
 }

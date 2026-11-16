@@ -1,0 +1,22 @@
+{
+  "project": "DragonZord Teste 2",
+  "instance": "teste-2",
+  "updatedAt": "2026-11-15",
+  "showroom": {
+    "url": "https://renatosfcontador-ops.github.io/grupo-reis-dragonzord-teste-2/",
+    "type": "github-pages",
+    "status": "online",
+    "httpStatus": 200,
+    "verifiedAt": "2026-11-15"
+  },
+  "backend": {
+    "tunnelUrl": null,
+    "exposed": false,
+    "note": "Nenhum túnel público criado. Exposição pendente de confirmação e autenticação forte."
+  },
+  "validation": {
+    "serverJs": "ok",
+    "appJs": "ok",
+    "projectsJson": "ok"
+  }
+}
